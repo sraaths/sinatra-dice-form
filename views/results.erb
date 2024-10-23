@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Target: Dice Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1>You rolled <%= @num_dice %> dice with <%= @num_sides %> sides</h1>
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li><%= a_roll %></li>
+  <% end %>
+</ul>
+<a href="/">Roll again</a>
+<a href="/">Go back home</a>
+</body>
+</html>
